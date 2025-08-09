@@ -81,8 +81,8 @@
             width: 100%;
         }
 
-        /* Hero Section */
-        .hero {
+        /*  Section */
+        . {
             height: 100vh;
             display: flex;
             align-items: center;
@@ -96,7 +96,7 @@
             background-attachment: fixed;
         }
 
-        .hero::before {
+        .::before {
             content: '';
             position: absolute;
             top: 0;
@@ -107,7 +107,7 @@
             z-index: 1;
         }
 
-        .hero-content {
+        .-content {
             text-align: center;
             z-index: 2;
             max-width: 800px;
@@ -115,7 +115,7 @@
             position: relative;
         }
 
-        .hero-content::before {
+        .-content::before {
             content: '';
             position: absolute;
             top: -50px;
@@ -129,8 +129,8 @@
             border: 1px solid rgba(255,255,255,0.1);
         }
 
-        /* Parallax effect for hero image */
-        .hero-image {
+        /* Parallax effect for  image */
+        .-image {
             position: absolute;
             top: 0;
             left: 0;
@@ -144,7 +144,7 @@
             will-change: transform;
         }
 
-        .hero-overlay {
+        .-overlay {
             position: absolute;
             top: 0;
             left: 0;
@@ -167,7 +167,7 @@
             animation: fadeInUp 1s ease-out;
         }
 
-        .hero p {
+        . p {
             font-size: 1.5rem;
             color: #ccc;
             margin-bottom: 2rem;
@@ -437,11 +437,11 @@
                 display: none;
             }
 
-            .hero h1 {
+            . h1 {
                 font-size: 2.5rem;
             }
 
-            .hero p {
+            . p {
                 font-size: 1.2rem;
             }
 
@@ -475,10 +475,12 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-image"></div>
-        <div class="hero-overlay"></div>
+    <!--  Section -->
+    <section id="home" class="">
+        <div class="-image">
+            <img src="images/hero_img.png" alt="Hero Image" class="hero-bg-image" />
+        </div>
+        <div class="-overlay"></div>
         <div class="floating-notes">
             <div class="note">♪</div>
             <div class="note">♫</div>
